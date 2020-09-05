@@ -56,23 +56,24 @@ type User struct {
 
 type Performance struct {
 	Return struct {
-		TimeReturn          float64 `json:"time_return"`
-		TimeReturnLastWeek  float64 `json:"time_return_last_week"`
-		TimeReturnLastMonth float64 `json:"time_return_last_month"`
-		TimeReturnLastYear  float64 `json:"time_return_last_year"`
-		TimeReturnAnnual    float64 `json:"time_return_annual"`
-		XIRR                float64 `json:"XIRR"`
-		Investment          int     `json:"investment"`
-		Pl                  float64 `json:"pl"`
-		Average             float64 `json:"average"`
-		MoneyReturn         float64 `json:"money_return"`
-		MoneyReturnAnnual   float64 `json:"money_return_annual"`
-		Inflows             int     `json:"inflows"`
-		Outflows            int     `json:"outflows"`
-		TaxOutflows         int     `json:"tax_outflows"`
-		PlNetTax            float64 `json:"pl_net_tax"`
-		TotalAmount         float64 `json:"total_amount"`
-		Volatility          float64 `json:"volatility"`
+		TimeReturn          float64            `json:"time_return"`
+		TimeReturnLastWeek  float64            `json:"time_return_last_week"`
+		TimeReturnLastMonth float64            `json:"time_return_last_month"`
+		TimeReturnLastYear  float64            `json:"time_return_last_year"`
+		TimeReturnAnnual    float64            `json:"time_return_annual"`
+		XIRR                float64            `json:"XIRR"`
+		Investment          int                `json:"investment"`
+		Pl                  float64            `json:"pl"`
+		Average             float64            `json:"average"`
+		MoneyReturn         float64            `json:"money_return"`
+		MoneyReturnAnnual   float64            `json:"money_return_annual"`
+		Inflows             int                `json:"inflows"`
+		Outflows            int                `json:"outflows"`
+		TaxOutflows         int                `json:"tax_outflows"`
+		PlNetTax            float64            `json:"pl_net_tax"`
+		TotalAmount         float64            `json:"total_amount"`
+		Volatility          float64            `json:"volatility"`
+		Index               map[string]float64 `json:"index"`
 	} `json:"return"`
 	Volatility float64 `json:"volatility"`
 }
